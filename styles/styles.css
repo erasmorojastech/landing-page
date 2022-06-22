@@ -1,0 +1,51 @@
+:root {
+  --dark : #1f2937;
+  --hero-primary-text: #f9faf8;
+  --hero-secondary-text: #e5e7eb;
+  --header-logo-text: #f9faf8;
+  --button-color: #3882f6;
+  --info-header-text: #1f2937;
+  --quote-section: #e5e7eb;
+  --quote-text: #1f2937;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--dark);
+}
+
+.header-logo {
+  font-size: 2.4rem;
+  color: var(--header-logo-text);
+}
+
+.header-logo > a {
+  color: var(--hero-primary-text);
+}
+
+.header-logo > a:visited {
+  color: var(--hero-primary-text);
+}
+
+.right-links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.8rem;
+  gap: 2rem;
+}
+
+.links {
+  color: var(--hero-secondary-text);
+}
+
+.links:visited {
+  color: var(--hero-secondary-text);
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+  background-color: var(--dark);
+}
