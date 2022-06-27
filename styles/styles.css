@@ -9,11 +9,19 @@
   --quote-text: #1f2937;
 }
 
-/* HEADER */
+body {
+  max-width: 1200px;
+}
+
+/* =============================================*/
+/*                   HEADER                     */
+/* =============================================*/
+
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: var(--dark);
+  gap: 20rem;
 }
 
 .header-logo {
@@ -33,7 +41,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   font-size: 1.8rem;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .links {
@@ -44,8 +52,166 @@ header {
   color: var(--hero-secondary-text);
 }
 
-/* HERO CONTENT */
+/* =============================================*/
+/*                HERO CONTENT                  */
+/* =============================================*/
+
+article {
+  height: 60vh;
+}
 
 .hero-content {
   background-color: var(--dark);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero-main-text {
+  font-size: 4.8rem;
+  color: var(--hero-primary-text);
+  font-weight: bold;
+}
+
+.hero-secondary-text {
+  color: var(--hero-secondary-text);
+  font-size: 1.8rem;
+}
+
+button {
+  width: 20%;
+  height: 15%;
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  color: var(--hero-secondary-text);
+  border-radius: 3px;
+}
+
+.component {
+  width: 35vw;
+  height: 30vh;
+}
+
+.right {
+  background-color: #666;
+  color: var(--quote-section);
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 30vh;
+}
+
+/* =============================================*/
+/*                RANDOM INFO                   */
+/* =============================================*/
+
+.random-info {
+  color: var(--info-header-text);
+  text-align: center;
+  position: relative;
+}
+
+.some-random-info {
+  font-size: 3.6rem;
+  font-weight: bolder;
+  padding-top: 7.5vh;
+}
+
+.cards  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  border: 2px solid var(--button-color);
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+figcaption {
+  width: 150px;
+  font-size: 1.4rem;
+}
+
+/* =============================================*/
+/*                   QUOTE                      */
+/* =============================================*/
+
+.info-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--quote-section);
+  color: var(--quote-text);
+  font-size: 3.6rem;
+  font-weight: light;
+  font-style: italic;
+  margin: 0 auto;
+}
+
+.quote-text {
+  text-align: justify;
+  width: 70vw;
+}
+
+.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+/* =============================================*/
+/*                HERO CONTENT                  */
+/* =============================================*/
+
+.info-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  width: 75vw;
+  height: 35%;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: var(--hero-secondary-text);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cta-title {
+  font-weight: bold;
+}
+
+.cta-button {
+  border: 1px solid var(--hero-secondary-text);
+  width: 10%;
+  height: 25%;
+}
+
+/* =============================================*/
+/*                  FOOTER                      */
+/* =============================================*/
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--dark);
+  color: var(--hero-primary-text);
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 10vh;
 }
